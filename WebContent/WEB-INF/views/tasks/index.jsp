@@ -7,15 +7,15 @@
         <ul>
             <c:forEach var="task" items="${tasks}">
                 <li>
-                    <a href="${pageContext.request.contextPath}"/show?id="${task.id}">
-                        <c:out value="${task.id}"/>
+                    <a href="${pageContext.request.contextPath}/show?id=${task.id}">
+                        <c:out value="${task.id}" />
                     </a>
                     :<c:out value="${task.content}"/>
                 </li>
             </c:forEach>
         </ul>
 
-        <p><a href="${pageContext.request.contextPath}"/new">新規タスクの追加</a></p>
+        <p><a href="${pageContext.request.contextPath}/new">新規タスクの作成</a></p>
 
     </c:param>
 </c:import>
